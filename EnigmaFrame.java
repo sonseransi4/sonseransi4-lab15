@@ -46,9 +46,8 @@ public class EnigmaFrame extends JFrame {
         upperPanel.add(decrypt);
 
 
-
-        inp = new JTextArea(5, 30); //Gave column space to be a wide amount
-        outp = new JTextArea(5, 30);
+        inp = new JTextArea(5, 25); //Gave column space to be a wide amount
+        outp = new JTextArea(5, 25);
         outp.setEditable(false); //sets result to be non-editable
 
         //panel for text
@@ -66,7 +65,7 @@ public class EnigmaFrame extends JFrame {
         outPanel.add(outp, BorderLayout.CENTER);
         //a panel created to add space between the input and the output JTextAreas
         JPanel spacePanel = new JPanel();
-        spacePanel.setPreferredSize(new Dimension(0, 15));
+        spacePanel.setPreferredSize(new Dimension(0, 20));
 
         //input and space area
         JPanel top = new JPanel(new BorderLayout());
